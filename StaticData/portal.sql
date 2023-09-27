@@ -1,0 +1,36 @@
+insert into portal.codes_hdr(code_type) values('role_cd');
+
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='role_cd'),'Super Admin',1);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='role_cd'),'Admin',2);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='role_cd'),'Employee',3);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='role_cd'),'Hr',4);
+
+
+insert into portal.codes_hdr(code_type) values('user_status_cd');
+
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='user_status_cd'),'Active',1);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='user_status_cd'),'InActive',2);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='user_status_cd'),'Blocked',3);
+ 
+insert into portal.codes_hdr(code_type) values('device_type_cd');
+
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='device_type_cd'),'Android',1);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='device_type_cd'),'Ios',2);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='device_type_cd'),'Web',3);
+
+
+insert into portal.codes_hdr(code_type) values('gender_cd');
+
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='gender_cd'),'Male',1);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='gender_cd'),'Female',1);
+
+
+insert into portal.codes_hdr(code_type) values('notification_status_cd');
+
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='notification_status_cd'),'Un Read',1);
+INSERT INTO  portal.CODES_DTL(CODES_HDR_SNO,CD_VALUE,SEQNO) VALUES((SELECT CODES_HDR_SNO FROM  portal.CODES_HDR WHERE CODE_TYPE='notification_status_cd'),'Read',2);
+
+
+
+
+
